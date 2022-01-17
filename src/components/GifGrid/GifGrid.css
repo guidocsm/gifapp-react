@@ -1,0 +1,25 @@
+.grid-title {
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.grid-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.grid-button {
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 7px;
+}

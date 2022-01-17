@@ -1,0 +1,13 @@
+.addCategory-box {
+    display: flex;
+    justify-content: center;
+}
+
+.addCategory-input {
+    border-radius: 5px;
+    background-color: rgb(206, 206, 206);
+    color: rgb(136, 35, 35);
+    font-weight: 900;
+    height: 30px;
+    width: 30%;
+}
