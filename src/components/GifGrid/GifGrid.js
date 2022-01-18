@@ -7,14 +7,10 @@ export const GifGrid = ({category, categories, setCategories}) => {
 
     const {data: images, loading} = useFetchGifs(category);
 
-    // useEffect((category) => {
-    //     setCategories('Gato')
-    // }, [category])
-
-    // const removeGif = () => {
-    //     console.log(setCategories)
-    // };
-    // removeGif()
+    const removeGif = () => {
+        const filterGif = categories.filter(elm => elm !== category);
+        setCategories(filterGif)
+    }
 
     return (
         <>
@@ -22,7 +18,7 @@ export const GifGrid = ({category, categories, setCategories}) => {
 
         <div className="grid-box">
             <h2 className="grid-title animate__animated animate__fadeIn">{category}</h2>
-            <button className="grid-button">Delete</button>
+            <button className="grid-button" onClick={removeGif}>Delete</button>
         </div>
 
         <div className="card-grid">
